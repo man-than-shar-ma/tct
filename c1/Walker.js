@@ -6,7 +6,7 @@ class Walker{
 
     display(){
         stroke(255);
-        strokeWeight(1);
+        strokeWeight(5);
         point(this.x,this.y);
     }
 
@@ -14,16 +14,16 @@ class Walker{
         let ch = floor(random(4));
         switch(ch){
             case 0:
-                this.x++;
+                this.x += 5;
                 break;
             case 1:
-                this.x--;
+                this.x -= 5;
                 break;
             case 2:
-                this.y++;
+                this.y += 5;
                 break;
             case 3:
-                this.y--;
+                this.y -= 5;
                 break;    
         }
     }
