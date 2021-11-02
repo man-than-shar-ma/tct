@@ -5,7 +5,7 @@ let rad = 5;
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
-  og = createGraphics(windowWidth,windowHeight);
+  og = createGraphics(width,height);
   walker1 = new Walker(width,height,rad,og);
   background(0);
   og.clear();

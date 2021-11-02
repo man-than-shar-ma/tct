@@ -1,8 +1,8 @@
 class Walker{
-    constructor(width,height,rad){
-        this.x = width/2;
-        this.y = height/2;
-        this.rad = rad;
+    constructor(w,h,r){
+        this.x = w/2;
+        this.y = h/2;
+        this.rad = r;
     }
 
     display(can,col){
@@ -15,7 +15,7 @@ class Walker{
         let ch = floor(random(4));
         switch(ch){
             case 0:
-                if(!(this.x > windowWidth-this.rad))
+                if(!(this.x > width-this.rad))
                     this.x += this.rad;
                 break;
             case 1:
@@ -23,7 +23,7 @@ class Walker{
                     this.x -= this.rad;
                 break;
             case 2:
-                if(!(this.y > windowHeight-this.rad))
+                if(!(this.y > height-this.rad))
                     this.y += this.rad;
                 break;
             case 3:
