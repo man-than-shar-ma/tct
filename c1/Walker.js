@@ -15,16 +15,20 @@ class Walker{
         let ch = floor(random(4));
         switch(ch){
             case 0:
-                this.x += this.rad;
+                if(!(this.x > windowWidth-this.rad))
+                    this.x += this.rad;
                 break;
             case 1:
-                this.x -= this.rad;
+                if (!(this.x < 0+this.rad))
+                    this.x -= this.rad;
                 break;
             case 2:
-                this.y += this.rad;
+                if(!(this.y > windowHeight-this.rad))
+                    this.y += this.rad;
                 break;
             case 3:
-                this.y -= this.rad;
+                if (!(this.y < 0+this.rad))
+                    this.y -= this.rad;
                 break;    
         }
     }
