@@ -13,7 +13,6 @@ class Ball{
         circle(this.x,this.y,this.rad);
     }
       
-      
     moveBall(){
         this.x += this.spx;
         this.y += this.spy;
