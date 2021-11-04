@@ -1,3 +1,4 @@
 const cs = [
-    'Random Walker 4-dir'
+    'Random Walker 4-dir',
+    'Bouncing Ball'
 ];
