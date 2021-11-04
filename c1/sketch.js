@@ -6,7 +6,7 @@ function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
   og = createGraphics(width,height);
-  walker1 = new Walker(width,height,rad,og);
+  walker1 = new Walker(width,height,rad);
   background(0);
   og.clear();
 }

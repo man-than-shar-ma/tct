@@ -1,4 +1,5 @@
 class Walker{
+    
     constructor(w,h,r){
         this.x = w/2;
         this.y = h/2;
